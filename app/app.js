@@ -1,10 +1,11 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
+//TODO add pending, accepted
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
+  // 'myApp.explore',
+  // 'myApp.profile',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
