@@ -5,11 +5,11 @@
 angular.module('myApp', [
   'ngRoute',
   // 'myApp.explore',
-  // 'myApp.profile',
+  'myApp.profile',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  // $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/profile'});
 }]);
