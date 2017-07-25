@@ -4,12 +4,13 @@
 //TODO add pending, accepted
 angular.module('myApp', [
   'ngRoute',
-  // 'myApp.explore',
+  'myApp.explore',
   'myApp.profile',
-  'myApp.version'
+  'myApp.pending',
+  'myApp.accepted'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  // $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/profile'});
 }]);
