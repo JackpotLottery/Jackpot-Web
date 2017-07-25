@@ -27,3 +27,7 @@ body {
 .align-middle {
 	vertical-align:middle;
 }
+
+button > a {
+	color: #ffffff;
+}

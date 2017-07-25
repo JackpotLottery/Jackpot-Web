@@ -16,6 +16,7 @@ angular.module('myApp.pending', ['ngRoute'])
 		// {
 		// 	title:'Hackathon', 
 		// 	date:'Jul 07',
+		//  time:'10am',
 		// 	location:'One Microsoft Way, Redmond, WA',
 		// 	group:'Interns 2017',
 		// 	status:"accepted",
@@ -25,6 +26,7 @@ angular.module('myApp.pending', ['ngRoute'])
 			title:'Demo', 
 			img:$scope.defaultImgPath,
 			date:'Jul 27',
+			time:'10am',
 			location:'Building 83',
 			group:'Universal Store Interns',
 			status:"pending",

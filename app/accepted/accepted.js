@@ -17,6 +17,7 @@ angular.module('myApp.accepted', ['ngRoute'])
 			title:'Hackathon', 
 			img:$scope.defaultImgPath,
 			date:'Jul 07',
+			time:'10am',
 			location:'One Microsoft Way, Redmond, WA',
 			group:'Interns 2017',
 			status:"accepted",
