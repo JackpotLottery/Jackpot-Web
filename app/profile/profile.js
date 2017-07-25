@@ -9,6 +9,18 @@ angular.module('myApp.profile', ['ngRoute'])
   });
 }])
 
-.controller('ProfileCtrl', [function() {
+.controller('ProfileCtrl', ['$scope', function($scope) {
+
+	$scope.defaultProfilePicture = "./img/defaultProfilePicture.jpg"
+
+	$scope.user = {
+		name:"Test User",
+		groups:[
+			"Microsoft Interns 2017",
+			"Universal Store Interns",
+			"Test Group"
+		],
+		picture:$scope.defaultProfilePicture
+	}
 
 }]);

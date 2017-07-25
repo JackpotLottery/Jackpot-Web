@@ -1,11 +1,36 @@
 <div class="container">
+	<h3>My Info</h3>
 
-	<div class="jumbotron">
-	<h1>Profile</h1>
-
-		<p>This is your profile.</p>
-		<p>
-			<a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-		</p>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-1">
+					<img ng-src="{{user.picture}}" class="img-circle img-responsive">
+				</div>
+				<div class="col-md-9">
+					{{user.name}}
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<h3>My Groups</h3>
+
+	<div class="panel panel-default" ng-repeat="group in user.groups">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-1">
+					<img ng-src="{{defaultProfilePicture}}" class="img-circle img-responsive">
+				</div>
+				<div class="col-md-9">
+					{{group}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <p>
+		<a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+	</p> -->
+
 </div>

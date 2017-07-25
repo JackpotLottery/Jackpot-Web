@@ -5,3 +5,17 @@
 .space-for-navbar {
 	margin-top:100px;
 }
+
+.panel-body > .panel-title {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.panel-body > button {
+	margin-top:3px;
+	margin-bottom:5px;
+}
+
+.align-middle {
+	vertical-align:middle;
+}
